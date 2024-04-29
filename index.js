@@ -72,7 +72,7 @@ async function run() {
         console.log("newCraftItem", newCraftItem);
         const result = await sixData.insertOne(newCraftItem);
         console.log("result", result);
-        // res.status(201).json(result.ops[0]);
+
         res.send(result);
       } catch (error) {
         console.error("Error adding craft item:", error);
